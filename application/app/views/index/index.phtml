@@ -1,0 +1,50 @@
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">Currency Converter</a>
+    </div>
+</nav>
+<header class="masthead text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1 class="mb-5">Lets Convert some Money!</h1>
+                <div class="form-row">
+                    <div class="col-md-1"></div>
+                    <div class="col-12 col-md-4 mb-2">
+                        <br>
+                        <input id="amount" type="text" class="form-control form-control-lg" placeholder="How much?">
+                    </div>
+                    <div class="col-12 col-md-2 mb-2">
+                        <div class="input-label">From:</div>
+                        <select id="currency-from" class="form-control form-control-lg">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2 mb-2">
+                        <div class="input-label">To:</div>
+                        <select id="currency-to" class="form-control form-control-lg">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <br>
+                        <input id="convert_btn" type="button" class="btn btn-block btn-lg btn-primary" value="Convert"/>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="error-container text-danger">Something went wrong: <b>Exception</b> returned!</div>
+        <div class="result-container row">
+            <h3>Here is converted amount:</h3>
+            <div class="cash-container"></div>
+        </div>
+    </div>
+</header>
+
